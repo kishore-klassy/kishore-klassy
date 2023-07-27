@@ -9,4 +9,4 @@
 
 📄 Know about my experiences https://tr.ee/RWWaYj7k01
 
-⚡ Fun fact : Less Tension more Work!
+⚡ Fun fact : Less T
