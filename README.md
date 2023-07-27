@@ -9,4 +9,3 @@
 
 📄 Know about my experiences https://tr.ee/RWWaYj7k01
 
-⚡ Fun fact : Less T
