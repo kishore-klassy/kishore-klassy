@@ -2,9 +2,6 @@
 
 ![](My_header.png)
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:40EDF7,100:0066ff&height=200&section=header&text=Kishore%20Kumar%20✅&fontSize=45&fontColor=ffffff&animation=twinkling&fontAlignY=35" />
-</p>
 
 <h1 align="center">Hi 👋 I'm Kishore Kumar</h1>
 
