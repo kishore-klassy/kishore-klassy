@@ -19,7 +19,7 @@
 
 ```typescript
 const developer = {
-    name: "Your Name",
+    name: "Kishore kumar",
     title: "Full-Stack Developer & AI Engineer",
     location: "🌍 Earth, Solar System",
     languages: ["JavaScript", "TypeScript", "Python", "Go", "Rust"],
