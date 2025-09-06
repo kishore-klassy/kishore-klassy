@@ -19,7 +19,9 @@
   </a>
 </div>
 
----
+
+<!-- Glowing Divider -->
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 <p align="center">
   <img src="https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif" width="400" alt="coding gif">
@@ -35,26 +37,23 @@
 
 ---
 
-### 🔥 GitHub Stats
+<img align="right" alt="Coding" width="400" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif">
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=kishore-kumar&show_icons=true&theme=tokyonight" height="170" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=kishore-kumar&theme=tokyonight" height="170" />
-</div>
+```typescript
+const developer = {
+    name: "Kishore kumar",
+    title: "Full-Stack Developer & AI Engineer",
+    location: "🌍 Earth, Solar System",
+    languages: ["JavaScript", "TypeScript", "Python", "Go", "Rust"],
+    currentFocus: "Building scalable AI-powered applications",
+    funFact: "I debug with console.log() and I'm not ashamed! 🐛",
+    coffee: "☕ Powered by caffeine and curiosity",
+    motto: "Code is poetry written in logic"
+};
+console.log(developer.motto);
+```
 
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=kishore-kumar&theme=react-dark" />
-</div>
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=kishore-kumar&layout=compact&theme=radical" height="170" />
-</div>
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=kishore-kumar&theme=onestar&no-frame=true&row=1&column=7" />
-</div>
-
----
   
 <h2>Tools & Languages I code With!</h2>
 
@@ -80,6 +79,30 @@
 
   [![My Skills](https://skillicons.dev/icons?i=vscode,atom,androidstudio,anaconda,git,linux,powershell,stackoverflow,&perline=10)](https://github.com/Varun-Mayilvaganan)
 
+
+<!-- Career Section with Glassmorphism Style -->
+## 💼 Professional Journey
+
+<div align="center">
+
+```mermaid
+timeline
+    title My Career Timeline
+    2020 : Started Programming Journey
+         : First Hello World in python
+    2021 : Frontend Development
+         : Html,CSS & JavaScript Mastery
+    2022 : Backend & Full-Stack
+         : Django & Database Design
+    2023 : Mobile App Development (Full-Stack)
+         : Flutter & Django
+    2024 : AI & Machine Learning
+         : Computer vision
+    2025 : AI Agents Development
+         : Autogen,Langraph ,ViT
+```
+
+</div>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
