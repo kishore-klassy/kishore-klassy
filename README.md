@@ -56,28 +56,31 @@
 </div>
 
 ---
+  
+<h2>Tools & Languages I code With!</h2>
 
-### 🛠️ Tools & Tech Stack
+  [![My Skills](https://skillicons.dev/icons?i=html,css,js,java,c,python,wordpress,dart&perline=10)](https://github.com/Varun-Mayilvaganan)
 
-#### Programming Languages
-[![My Skills](https://skillicons.dev/icons?i=python,java,dart&perline=5)]()
+  <!-- ![](https://i.imgur.com/waxVImv.png) -->
+  ---
+  
 
-#### Databases
-[![My Skills](https://skillicons.dev/icons?i=postgresql,mongodb,mysql&perline=5)]()
 
-#### Machine Learning & AI
-[![My Skills](https://skillicons.dev/icons?i=pytorch,tensorflow,opencv&perline=5)]()
+  <h2>Frameworks & Databases</h2>
 
-#### Backend Frameworks
-[![My Skills](https://skillicons.dev/icons?i=fastapi,django,flask&perline=5)]()
+  
+ [![My Skills](https://skillicons.dev/icons?i=bootstrap,flutter,firebase,pytorch,tensorflow,scikitlearn,opencv,mysql,&perline=10)](https://github.com/Varun-Mayilvaganan)
+ 
 
-#### Full-Stack Development
-[![My Skills](https://skillicons.dev/icons?i=html,css,js,flutter&perline=5)]()
 
-#### Cloud & Deployment
-[![My Skills](https://skillicons.dev/icons?i=azure,git,linux&perline=5)]()
-
+<!-- ![](https://i.imgur.com/waxVImv.png) -->
 ---
+  
+
+<h2>Platforms & Tools</h2>
+
+  [![My Skills](https://skillicons.dev/icons?i=vscode,atom,androidstudio,anaconda,git,linux,powershell,stackoverflow,&perline=10)](https://github.com/Varun-Mayilvaganan)
+
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
