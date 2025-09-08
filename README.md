@@ -110,4 +110,181 @@ timeline
 
 <p align="center">✨ "Always curious, always building AI systems smarter than yesterday." ✨</p>
 
+---
 
+## 🎯 Featured Projects
+
+<div align="center">
+
+### 🤖 AI-Powered Applications
+| Project | Description | Tech Stack | Status |
+|---------|-------------|------------|--------|
+| **Intelligent Document Processor** | AI system for automated document analysis and extraction using Vision Language Models | Python, PyTorch, OpenCV, FastAPI | 🚀 Production |
+| **Multi-Agent Conversation System** | Conversational AI platform using AutoGen framework for complex task automation | Python, LangGraph, AutoGen, React | 🔄 In Development |
+| **Computer Vision Analytics** | Real-time image processing and analysis system for business intelligence | Python, TensorFlow, OpenCV, Docker | ✅ Completed |
+
+### 💻 Full-Stack Applications
+| Project | Description | Tech Stack | Status |
+|---------|-------------|------------|--------|
+| **E-Commerce Platform** | Scalable full-stack e-commerce solution with advanced features | Django, React, PostgreSQL, Redis | ✅ Completed |
+| **Mobile Learning App** | Cross-platform educational app with interactive content | Flutter, Firebase, Node.js | ✅ Completed |
+| **Real-time Chat System** | WebSocket-based messaging platform with file sharing | Node.js, Socket.io, MongoDB, React | ✅ Completed |
+
+</div>
+
+---
+
+## 💼 Professional Experience
+
+<div align="center">
+
+### 🏢 Current Role
+**GenAI Intern** @ **RandomTrees** | *2024 - Present*
+- Developing cutting-edge AI solutions using Vision Language Models
+- Implementing agent frameworks (AutoGen, LangGraph) for automated workflows  
+- Working with Model Context Protocol (MCP) for enhanced AI interactions
+- Contributing to research and development of intelligent systems
+
+### 📈 Key Achievements
+- 🎯 Successfully deployed 3+ AI-powered applications in production
+- 🚀 Improved system performance by 40% through optimization techniques
+- 👥 Collaborated with cross-functional teams on 5+ major projects
+- 📚 Mentored junior developers in AI/ML best practices
+
+</div>
+
+---
+
+## 🎓 Education & Certifications
+
+<div align="center">
+
+### 🏫 Academic Background
+- **Computer Science & Engineering** - *Ongoing*
+- **Specialized Courses**: Machine Learning, Deep Learning, Computer Vision
+- **Research Focus**: Artificial Intelligence, Multi-Agent Systems
+
+### 📜 Professional Certifications
+- 🤖 **AI/ML Specialization** - Stanford Online
+- 🔧 **Full-Stack Development** - FreeCodeCamp
+- 📱 **Mobile App Development** - Google Developer
+- ☁️ **Cloud Computing** - AWS Certified
+
+</div>
+
+---
+
+## 🛠️ Technical Expertise
+
+<div align="center">
+
+### 🧠 AI/ML Technologies
+![Python](https://img.shields.io/badge/Python-Expert-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-Advanced-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-Advanced-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-Advanced-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
+
+### 💻 Full-Stack Development
+![JavaScript](https://img.shields.io/badge/JavaScript-Expert-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-Advanced-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-Advanced-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Django](https://img.shields.io/badge/Django-Advanced-092E20?style=for-the-badge&logo=django&logoColor=white)
+![Flutter](https://img.shields.io/badge/Flutter-Advanced-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+
+### 🗄️ Databases & Cloud
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Advanced-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-Advanced-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-Intermediate-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Advanced-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+
+</div>
+
+---
+
+## 📊 GitHub Analytics
+
+<div align="center">
+
+### 📈 GitHub Statistics
+![Kishore's GitHub Stats](https://github-readme-stats.vercel.app/api?username=kishorekumararcot&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
+
+### 🔥 Contribution Streak
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=kishorekumararcot&theme=tokyonight&hide_border=true)
+
+### 💻 Most Used Languages
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=kishorekumararcot&layout=compact&theme=tokyonight&hide_border=true)
+
+### 🏆 GitHub Trophies
+![Trophy](https://github-profile-trophy.vercel.app/?username=kishorekumararcot&theme=tokyonight&no-frame=true&margin-w=15)
+
+### 📊 Contribution Graph
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=kishorekumararcot&theme=tokyo-night&hide_border=true)
+
+</div>
+
+---
+
+## 🌐 Connect & Collaborate
+
+<div align="center">
+
+### 📬 Let's Build Something Amazing Together!
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kishore-kumar-31b34224a/)
+[![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kishorekumararcot@gmail.com)
+[![Resume](https://img.shields.io/badge/Resume-Download-FF6B6B?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white)](Kishore-Kumar-Resume.pdf)
+
+### 🤝 Open to Opportunities
+- 💼 **Full-time positions** in AI/ML Engineering
+- 🚀 **Freelance projects** in Full-Stack Development
+- 🔬 **Research collaborations** in AI and Computer Vision
+- 🎯 **Consulting** for AI implementation strategies
+
+### 💬 Let's Discuss
+- 🤖 Artificial Intelligence & Machine Learning
+- 🔧 Full-Stack Development Solutions
+- 📱 Mobile App Development
+- ☁️ Cloud Architecture & DevOps
+
+</div>
+
+---
+
+<div align="center">
+
+### 🎯 Current Focus Areas
+
+```mermaid
+mindmap
+  root((AI Engineering))
+    Vision Language Models
+      Multi-modal AI
+      Image Processing
+      Document Analysis
+    Agent Frameworks
+      AutoGen
+      LangGraph
+      Multi-Agent Systems
+    Full-Stack Development
+      React/Next.js
+      Django/FastAPI
+      Mobile Development
+    Research & Innovation
+      Computer Vision
+      NLP Applications
+      MLOps Pipeline
+```
+
+</div>
+
+---
+
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=kishorekumararcot&color=blueviolet&style=for-the-badge&label=Profile+Views" alt="Profile Views">
+  
+  **⭐ If you find my work interesting, please consider giving a star to my repositories!**
+  
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
+  
+  *"Innovation distinguishes between a leader and a follower." - Steve Jobs*
+</div>
