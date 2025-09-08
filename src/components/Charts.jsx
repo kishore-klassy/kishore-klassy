@@ -57,8 +57,8 @@ const Charts = () => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
       {/* Donut Chart */}
-      <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
-        <h3 className="text-lg font-semibold text-gray-800 mb-4">Total Assigned</h3>
+      <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 p-6">
+        <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-4">Total Assigned</h3>
         <div className="h-64">
           <ResponsiveContainer width="100%" height="100%">
             <PieChart>
@@ -88,15 +88,15 @@ const Charts = () => {
                 className="w-3 h-3 rounded-full"
                 style={{ backgroundColor: entry.color }}
               ></div>
-              <span className="text-sm text-gray-600">{entry.name}</span>
+              <span className="text-sm text-gray-600 dark:text-gray-300">{entry.name}</span>
             </div>
           ))}
         </div>
       </div>
 
       {/* Bar Chart */}
-      <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
-        <h3 className="text-lg font-semibold text-gray-800 mb-4">BOL Exception & Resolution Status</h3>
+      <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 p-6">
+        <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-4">BOL Exception & Resolution Status</h3>
         <div className="h-64">
           <ResponsiveContainer width="100%" height="100%">
             <BarChart data={barData}>
@@ -111,8 +111,8 @@ const Charts = () => {
       </div>
 
       {/* Horizontal Category Chart */}
-      <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
-        <h3 className="text-lg font-semibold text-gray-800 mb-4">BOL Issue Root Cause Category</h3>
+      <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 p-6">
+        <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-4">BOL Issue Root Cause Category</h3>
         <div className="h-64">
           <ResponsiveContainer width="100%" height="100%">
             <BarChart

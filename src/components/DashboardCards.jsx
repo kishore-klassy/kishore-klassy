@@ -59,16 +59,16 @@ const DashboardCards = () => {
       {cards.map((card, index) => {
         const IconComponent = card.icon;
         return (
-          <div key={index} className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 hover:shadow-md hover:border-gray-200 transition-all duration-200">
+          <div key={index} className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 p-6 hover:shadow-md hover:border-gray-200 dark:hover:border-gray-600 transition-all duration-200">
             <div className="flex items-start justify-between">
               <div className="flex-1">
-                <h3 className="text-sm font-medium text-gray-600 mb-3">{card.title}</h3>
+                <h3 className="text-sm font-medium text-gray-600 dark:text-gray-300 mb-3">{card.title}</h3>
                 <div className="flex items-baseline space-x-1">
-                  <span className="text-3xl font-bold text-gray-900">{card.value}</span>
-                  <span className="text-sm text-gray-500 font-medium">{card.subtitle}</span>
+                  <span className="text-3xl font-bold text-gray-900 dark:text-white">{card.value}</span>
+                  <span className="text-sm text-gray-500 dark:text-gray-400 font-medium">{card.subtitle}</span>
                 </div>
               </div>
-              <div className={`p-3 rounded-xl bg-orange-50 ${card.iconColor}`}>
+              <div className={`p-3 rounded-xl bg-orange-50 dark:bg-orange-900/20 ${card.iconColor}`}>
                 <IconComponent className="w-6 h-6" />
               </div>
             </div>

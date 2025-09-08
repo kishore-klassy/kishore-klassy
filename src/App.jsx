@@ -8,7 +8,7 @@ import DataTable from './components/DataTable';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100 flex">
+    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 flex">
       {/* Sidebar */}
       <Sidebar />
       
@@ -18,7 +18,7 @@ function App() {
         <Navbar />
         
         {/* Main Dashboard Content */}
-        <main className="flex-1 p-6 overflow-auto bg-gray-50">
+        <main className="flex-1 p-6 overflow-auto bg-gray-50 dark:bg-gray-800">
           {/* Filter Bar */}
           <FilterBar />
           

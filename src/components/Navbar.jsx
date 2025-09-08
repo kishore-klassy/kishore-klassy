@@ -36,15 +36,15 @@ const Navbar = () => {
 
         {/* Dropdown Menu */}
         {isProfileOpen && (
-          <div className="absolute right-0 mt-2 w-48 bg-white text-gray-800 rounded-lg shadow-lg border border-gray-200 py-1 z-50">
-            <button className="w-full text-left px-4 py-2 hover:bg-gray-100 transition-colors">
+          <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-1 z-50">
+            <button className="w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
               Profile Settings
             </button>
-            <button className="w-full text-left px-4 py-2 hover:bg-gray-100 transition-colors">
+            <button className="w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
               Account
             </button>
-            <hr className="my-1" />
-            <button className="w-full text-left px-4 py-2 hover:bg-gray-100 transition-colors text-red-600">
+            <hr className="my-1 border-gray-200 dark:border-gray-700" />
+            <button className="w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors text-red-600 dark:text-red-400">
               Sign Out
             </button>
           </div>

@@ -18,7 +18,7 @@ const FilterBar = () => {
 
   return (
     <div className="mb-6">
-      <h1 className="text-2xl font-bold text-gray-900 mb-6">BOL Dashboard</h1>
+      <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">BOL Dashboard</h1>
       
       <div className="flex flex-wrap gap-4">
         {/* BOL Status Filter */}
@@ -26,7 +26,7 @@ const FilterBar = () => {
           <select
             value={filters.bolStatus}
             onChange={(e) => setFilters({...filters, bolStatus: e.target.value})}
-            className="appearance-none bg-white border border-gray-300 rounded-lg px-4 py-2 pr-8 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            className="appearance-none bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg px-4 py-2 pr-8 text-sm text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
           >
             {filterOptions.bolStatus.map(option => (
               <option key={option} value={option}>
@@ -34,7 +34,7 @@ const FilterBar = () => {
               </option>
             ))}
           </select>
-          <ChevronDown className="absolute right-2 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400 pointer-events-none" />
+          <ChevronDown className="absolute right-2 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400 dark:text-gray-300 pointer-events-none" />
         </div>
 
         {/* MOT Filter */}
@@ -42,7 +42,7 @@ const FilterBar = () => {
           <select
             value={filters.mot}
             onChange={(e) => setFilters({...filters, mot: e.target.value})}
-            className="appearance-none bg-white border border-gray-300 rounded-lg px-4 py-2 pr-8 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            className="appearance-none bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg px-4 py-2 pr-8 text-sm text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
           >
             {filterOptions.mot.map(option => (
               <option key={option} value={option}>
@@ -50,7 +50,7 @@ const FilterBar = () => {
               </option>
             ))}
           </select>
-          <ChevronDown className="absolute right-2 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400 pointer-events-none" />
+          <ChevronDown className="absolute right-2 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400 dark:text-gray-300 pointer-events-none" />
         </div>
 
         {/* Origin Filter */}
@@ -58,7 +58,7 @@ const FilterBar = () => {
           <select
             value={filters.origin}
             onChange={(e) => setFilters({...filters, origin: e.target.value})}
-            className="appearance-none bg-white border border-gray-300 rounded-lg px-4 py-2 pr-8 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            className="appearance-none bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg px-4 py-2 pr-8 text-sm text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
           >
             {filterOptions.origin.map(option => (
               <option key={option} value={option}>
@@ -66,7 +66,7 @@ const FilterBar = () => {
               </option>
             ))}
           </select>
-          <ChevronDown className="absolute right-2 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400 pointer-events-none" />
+          <ChevronDown className="absolute right-2 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400 dark:text-gray-300 pointer-events-none" />
         </div>
 
         {/* Date Filter */}
@@ -74,14 +74,14 @@ const FilterBar = () => {
           <select
             value={filters.date}
             onChange={(e) => setFilters({...filters, date: e.target.value})}
-            className="appearance-none bg-white border border-gray-300 rounded-lg px-4 py-2 pr-8 pl-10 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            className="appearance-none bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg px-4 py-2 pr-8 pl-10 text-sm text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
           >
             {filterOptions.date.map(option => (
               <option key={option} value={option}>{option}</option>
             ))}
           </select>
-          <Calendar className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400 pointer-events-none" />
-          <ChevronDown className="absolute right-2 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400 pointer-events-none" />
+          <Calendar className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400 dark:text-gray-300 pointer-events-none" />
+          <ChevronDown className="absolute right-2 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400 dark:text-gray-300 pointer-events-none" />
         </div>
       </div>
     </div>
