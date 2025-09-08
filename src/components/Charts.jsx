@@ -57,8 +57,8 @@ const Charts = () => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
       {/* Donut Chart */}
-      <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
-        <h3 className="text-lg font-semibold text-gray-800 mb-4">Total Assigned</h3>
+      <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 hover:shadow-md transition-all duration-200">
+        <h3 className="text-lg font-semibold text-gray-900 mb-6">Total Assigned</h3>
         <div className="h-64">
           <ResponsiveContainer width="100%" height="100%">
             <PieChart>
@@ -95,8 +95,8 @@ const Charts = () => {
       </div>
 
       {/* Bar Chart */}
-      <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
-        <h3 className="text-lg font-semibold text-gray-800 mb-4">BOL Exception & Resolution Status</h3>
+      <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 hover:shadow-md transition-all duration-200">
+        <h3 className="text-lg font-semibold text-gray-900 mb-6">BOL Exception & Resolution Status</h3>
         <div className="h-64">
           <ResponsiveContainer width="100%" height="100%">
             <BarChart data={barData}>
@@ -111,8 +111,8 @@ const Charts = () => {
       </div>
 
       {/* Horizontal Category Chart */}
-      <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
-        <h3 className="text-lg font-semibold text-gray-800 mb-4">BOL Issue Root Cause Category</h3>
+      <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 hover:shadow-md transition-all duration-200">
+        <h3 className="text-lg font-semibold text-gray-900 mb-6">BOL Issue Root Cause Category</h3>
         <div className="h-64">
           <ResponsiveContainer width="100%" height="100%">
             <BarChart

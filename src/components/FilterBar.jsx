@@ -17,16 +17,17 @@ const FilterBar = () => {
   };
 
   return (
-    <div className="mb-6">
-      <h1 className="text-2xl font-bold text-gray-900 mb-6">BOL Dashboard</h1>
+    <div className="mb-8">
+      <h1 className="text-3xl font-bold text-gray-900 mb-8">BOL Dashboard</h1>
       
-      <div className="flex flex-wrap gap-4">
+      <div className="flex flex-wrap gap-4 mb-2">
         {/* BOL Status Filter */}
         <div className="relative">
           <select
             value={filters.bolStatus}
             onChange={(e) => setFilters({...filters, bolStatus: e.target.value})}
-            className="appearance-none bg-white border border-gray-300 rounded-lg px-4 py-2 pr-8 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            className="appearance-none bg-white border border-gray-300 rounded-lg px-4 py-2.5 pr-8 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 hover:border-gray-400 transition-colors min-w-[140px]"
+            aria-label="Filter by BOL Status"
           >
             {filterOptions.bolStatus.map(option => (
               <option key={option} value={option}>
@@ -42,11 +43,12 @@ const FilterBar = () => {
           <select
             value={filters.mot}
             onChange={(e) => setFilters({...filters, mot: e.target.value})}
-            className="appearance-none bg-white border border-gray-300 rounded-lg px-4 py-2 pr-8 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            className="appearance-none bg-white border border-gray-300 rounded-lg px-4 py-2.5 pr-8 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 hover:border-gray-400 transition-colors min-w-[140px]"
+            aria-label="Filter by Mode of Transport"
           >
             {filterOptions.mot.map(option => (
               <option key={option} value={option}>
-                {option === 'All' ? 'Select the MOT' : option}
+                {option === 'All' ? 'Mode of Transport' : option}
               </option>
             ))}
           </select>
@@ -58,11 +60,12 @@ const FilterBar = () => {
           <select
             value={filters.origin}
             onChange={(e) => setFilters({...filters, origin: e.target.value})}
-            className="appearance-none bg-white border border-gray-300 rounded-lg px-4 py-2 pr-8 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            className="appearance-none bg-white border border-gray-300 rounded-lg px-4 py-2.5 pr-8 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 hover:border-gray-400 transition-colors min-w-[160px]"
+            aria-label="Filter by Origin Location"
           >
             {filterOptions.origin.map(option => (
               <option key={option} value={option}>
-                {option === 'All' ? 'Select the Origin' : option}
+                {option === 'All' ? 'Origin Location' : option}
               </option>
             ))}
           </select>
@@ -74,7 +77,8 @@ const FilterBar = () => {
           <select
             value={filters.date}
             onChange={(e) => setFilters({...filters, date: e.target.value})}
-            className="appearance-none bg-white border border-gray-300 rounded-lg px-4 py-2 pr-8 pl-10 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            className="appearance-none bg-white border border-gray-300 rounded-lg px-4 py-2.5 pr-8 pl-10 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 hover:border-gray-400 transition-colors min-w-[140px]"
+            aria-label="Filter by Date Range"
           >
             {filterOptions.date.map(option => (
               <option key={option} value={option}>{option}</option>
