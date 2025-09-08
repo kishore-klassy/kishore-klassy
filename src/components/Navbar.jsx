@@ -1,8 +1,15 @@
 import React, { useState } from 'react';
 import { Bell, Settings, ChevronDown } from 'lucide-react';
+import { useAuth } from '../contexts/AuthContext';
 
 const Navbar = () => {
   const [isProfileOpen, setIsProfileOpen] = useState(false);
+  const { user, logout } = useAuth();
+
+  const handleLogout = () => {
+    logout();
+    setIsProfileOpen(false);
+  };
 
   return (
     <nav className="bg-gray-900 text-white px-6 py-4 flex items-center justify-end space-x-6 border-b border-gray-800" role="banner">
@@ -36,10 +43,12 @@ const Navbar = () => {
           aria-haspopup="menu"
           aria-label="Open user menu"
         >
-          <div className="w-8 h-8 bg-primary-500 rounded-full flex items-center justify-center">
-            <span className="text-white text-sm font-medium">K</span>
+          <div className="w-8 h-8 bg-indigo-500 rounded-full flex items-center justify-center">
+            <span className="text-white text-sm font-medium">
+              {user?.name?.charAt(0).toUpperCase() || user?.email?.charAt(0).toUpperCase() || 'U'}
+            </span>
           </div>
-          <span className="font-medium">Kkovalan</span>
+          <span className="font-medium">{user?.name || user?.email || 'User'}</span>
           <ChevronDown className="w-4 h-4" />
         </button>
 
@@ -60,6 +69,7 @@ const Navbar = () => {
             </button>
             <hr className="my-1" />
             <button 
+              onClick={handleLogout}
               className="w-full text-left px-4 py-2 hover:bg-gray-100 transition-colors text-red-600 focus-ring rounded-none"
               role="menuitem"
             >
