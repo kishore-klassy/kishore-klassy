@@ -5,6 +5,7 @@ import FilterBar from './components/FilterBar';
 import DashboardCards from './components/DashboardCards';
 import Charts from './components/Charts';
 import DataTable from './components/DataTable';
+import PDFUploader from './components/PDFUploader';
 
 function App() {
   return (
@@ -22,6 +23,11 @@ function App() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             {/* Filter Bar */}
             <FilterBar />
+            
+            {/* PDF Uploader */}
+            <div className="mb-8">
+              <PDFUploader />
+            </div>
             
             {/* Dashboard Cards */}
             <DashboardCards />
