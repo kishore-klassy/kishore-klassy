@@ -1,56 +1,64 @@
 import React from 'react';
 import { 
-  FileText, 
-  CheckCircle, 
-  AlertCircle, 
+  TrendingUp, 
+  Package, 
+  AlertTriangle, 
   Clock, 
   Target, 
-  GitCompare 
+  BarChart3,
+  DollarSign,
+  Truck
 } from 'lucide-react';
 
 const DashboardCards = () => {
   const cards = [
     {
-      title: 'Total Assigned',
-      value: '18',
-      subtitle: 'Today',
-      icon: FileText,
-      iconColor: 'text-orange-500'
-    },
-    {
-      title: 'Completed',
-      value: '10',
-      subtitle: 'Successfully processed',
-      icon: CheckCircle,
-      iconColor: 'text-orange-500'
-    },
-    {
-      title: 'Incomplete',
-      value: '18',
-      subtitle: 'Requires attention',
-      icon: AlertCircle,
-      iconColor: 'text-orange-500'
-    },
-    {
-      title: 'Avg BOL Processing Time',
-      value: '3.5',
-      subtitle: 'sec',
-      icon: Clock,
-      iconColor: 'text-orange-500'
-    },
-    {
-      title: 'Extraction Accuracy',
-      value: '97',
+      title: 'Forecast Accuracy',
+      value: '94.2',
       subtitle: '%',
       icon: Target,
-      iconColor: 'text-orange-500'
+      iconColor: 'text-emerald-500',
+      bgColor: 'bg-emerald-50 dark:bg-emerald-900/20'
     },
     {
-      title: 'Matching Accuracy',
-      value: '95',
-      subtitle: '%',
-      icon: GitCompare,
-      iconColor: 'text-orange-500'
+      title: 'Active SKUs',
+      value: '2,847',
+      subtitle: 'Items tracked',
+      icon: Package,
+      iconColor: 'text-blue-500',
+      bgColor: 'bg-blue-50 dark:bg-blue-900/20'
+    },
+    {
+      title: 'Demand Variance',
+      value: '12.3',
+      subtitle: '% vs forecast',
+      icon: BarChart3,
+      iconColor: 'text-purple-500',
+      bgColor: 'bg-purple-50 dark:bg-purple-900/20'
+    },
+    {
+      title: 'Stock-out Risk',
+      value: '23',
+      subtitle: 'Items at risk',
+      icon: AlertTriangle,
+      iconColor: 'text-red-500',
+      bgColor: 'bg-red-50 dark:bg-red-900/20'
+    },
+    {
+      title: 'Lead Time Avg',
+      value: '14.2',
+      subtitle: 'days',
+      icon: Clock,
+      iconColor: 'text-orange-500',
+      bgColor: 'bg-orange-50 dark:bg-orange-900/20'
+    },
+    {
+      title: 'Cost Savings',
+      value: '$2.4M',
+      subtitle: 'This quarter',
+      icon: DollarSign,
+      iconColor: 'text-green-500',
+      bgColor: 'bg-green-50 dark:bg-green-900/20'
     }
   ];
 
@@ -68,7 +76,7 @@ const DashboardCards = () => {
                   <span className="text-sm text-gray-500 dark:text-gray-400 font-medium">{card.subtitle}</span>
                 </div>
               </div>
-              <div className={`p-3 rounded-xl bg-orange-50 dark:bg-orange-900/20 ${card.iconColor}`}>
+              <div className={`p-3 rounded-xl ${card.bgColor} ${card.iconColor}`}>
                 <IconComponent className="w-6 h-6" />
               </div>
             </div>

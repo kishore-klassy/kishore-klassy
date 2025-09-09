@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MoreVertical, Calendar, Filter } from 'lucide-react';
+import { MoreVertical, Calendar, Filter, TrendingUp, TrendingDown, AlertTriangle } from 'lucide-react';
 
 const DataTable = () => {
   const [selectedRows, setSelectedRows] = useState(new Set());
@@ -8,68 +8,73 @@ const DataTable = () => {
   const tableData = [
     {
       id: 1,
-      bolNumber: 'SHD-0525-001',
-      fileName: 'BOL_Document_001.pdf',
-      productName: 'Steel Coils',
-      mot: 'Truck',
-      origin: 'Houston, TX',
-      assignedTo: 'John Smith',
-      issueStatus: 'Pending Review',
-      rootCause: 'Unmatched Fields',
-      shipmentDate: '2024-01-15',
-      bolStatus: 'extracted'
+      sku: 'ELC-001-PRO',
+      productName: 'MacBook Pro 16"',
+      category: 'Electronics',
+      currentStock: 245,
+      forecastedDemand: 320,
+      actualDemand: 298,
+      accuracy: 93.1,
+      riskLevel: 'Low',
+      nextReorder: '2024-02-15',
+      supplier: 'Apple Inc.',
+      status: 'optimal'
     },
     {
       id: 2,
-      bolNumber: 'SHD-0525-002',
-      fileName: 'BOL_Document_002.pdf',
-      productName: 'Aluminum Sheets',
-      mot: 'Rail',
-      origin: 'Chicago, IL',
-      assignedTo: 'Sarah Johnson',
-      issueStatus: 'In Progress',
-      rootCause: 'Missing Data',
-      shipmentDate: '2024-01-16',
-      bolStatus: 'processing'
+      sku: 'APP-002-TEE',
+      productName: 'Cotton T-Shirt',
+      category: 'Apparel',
+      currentStock: 1250,
+      forecastedDemand: 800,
+      actualDemand: 950,
+      accuracy: 84.2,
+      riskLevel: 'Medium',
+      nextReorder: '2024-02-10',
+      supplier: 'Fashion Co.',
+      status: 'reorder'
     },
     {
       id: 3,
-      bolNumber: 'SHD-0525-003',
-      fileName: 'BOL_Document_003.pdf',
-      productName: 'Copper Wire',
-      mot: 'Ship',
-      origin: 'Los Angeles, CA',
-      assignedTo: 'Mike Wilson',
-      issueStatus: 'Completed',
-      rootCause: 'None',
-      shipmentDate: '2024-01-17',
-      bolStatus: 'matched'
+      sku: 'HOM-003-CHR',
+      productName: 'Office Chair',
+      category: 'Home & Garden',
+      currentStock: 89,
+      forecastedDemand: 150,
+      actualDemand: 145,
+      accuracy: 96.7,
+      riskLevel: 'High',
+      nextReorder: '2024-02-05',
+      supplier: 'Furniture Ltd.',
+      status: 'critical'
     },
     {
       id: 4,
-      bolNumber: 'SHD-0525-004',
-      fileName: 'BOL_Document_004.pdf',
-      productName: 'Iron Rods',
-      mot: 'Truck',
-      origin: 'Dallas, TX',
-      assignedTo: 'Emily Davis',
-      issueStatus: 'Failed',
-      rootCause: 'Format Issues',
-      shipmentDate: '2024-01-18',
-      bolStatus: 'failed'
+      sku: 'SPT-004-SHO',
+      productName: 'Running Shoes',
+      category: 'Sports',
+      currentStock: 340,
+      forecastedDemand: 280,
+      actualDemand: 265,
+      accuracy: 94.6,
+      riskLevel: 'Low',
+      nextReorder: '2024-02-20',
+      supplier: 'SportsCorp',
+      status: 'optimal'
     },
     {
       id: 5,
-      bolNumber: 'SHD-0525-005',
-      fileName: 'BOL_Document_005.pdf',
-      productName: 'Stainless Steel',
-      mot: 'Rail',
-      origin: 'Detroit, MI',
-      assignedTo: 'Robert Brown',
-      issueStatus: 'Pending Review',
-      rootCause: 'Unmatched Fields',
-      shipmentDate: '2024-01-19',
-      bolStatus: 'extracted'
+      sku: 'ELC-005-PHN',
+      productName: 'iPhone 15 Pro',
+      category: 'Electronics',
+      currentStock: 156,
+      forecastedDemand: 450,
+      actualDemand: 420,
+      accuracy: 93.3,
+      riskLevel: 'Medium',
+      nextReorder: '2024-02-08',
+      supplier: 'Apple Inc.',
+      status: 'reorder'
     }
   ];
 
@@ -95,10 +100,10 @@ const DataTable = () => {
 
   const getStatusBadge = (status) => {
     const statusClasses = {
-      extracted: 'bg-green-100 text-green-800',
-      processing: 'bg-yellow-100 text-yellow-800',
-      matched: 'bg-blue-100 text-blue-800',
-      failed: 'bg-red-100 text-red-800'
+      optimal: 'bg-green-100 text-green-800',
+      reorder: 'bg-yellow-100 text-yellow-800',
+      critical: 'bg-red-100 text-red-800',
+      overstock: 'bg-blue-100 text-blue-800'
     };
 
     return (
@@ -108,10 +113,40 @@ const DataTable = () => {
     );
   };
 
+  const getRiskBadge = (risk) => {
+    const riskClasses = {
+      Low: 'bg-green-100 text-green-800',
+      Medium: 'bg-yellow-100 text-yellow-800',
+      High: 'bg-red-100 text-red-800'
+    };
+
+    return (
+      <span className={`px-2 py-1 rounded-full text-xs font-medium ${riskClasses[risk] || 'bg-gray-100 text-gray-800'}`}>
+        {risk}
+      </span>
+    );
+  };
+
+  const getAccuracyIcon = (accuracy) => {
+    if (accuracy >= 95) return <TrendingUp className="w-4 h-4 text-green-500" />;
+    if (accuracy >= 85) return <TrendingUp className="w-4 h-4 text-yellow-500" />;
+    return <TrendingDown className="w-4 h-4 text-red-500" />;
+  };
+
   return (
     <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden">
-      <div className="px-6 py-4 border-b border-gray-200 dark:border-gray-700">
-        <h3 className="text-lg font-semibold text-gray-800 dark:text-white">BOL Pipeline Records</h3>
+      <div className="px-6 py-4 border-b border-gray-200 dark:border-gray-700 flex justify-between items-center">
+        <h3 className="text-lg font-semibold text-gray-800 dark:text-white">Demand Forecasting Overview</h3>
+        <div className="flex space-x-2">
+          <button className="flex items-center space-x-2 px-3 py-1 bg-emerald-100 text-emerald-700 rounded-lg hover:bg-emerald-200 transition-colors">
+            <Filter className="w-4 h-4" />
+            <span className="text-sm">Filter</span>
+          </button>
+          <button className="flex items-center space-x-2 px-3 py-1 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition-colors">
+            <Calendar className="w-4 h-4" />
+            <span className="text-sm">Export</span>
+          </button>
+        </div>
       </div>
       
       <div className="overflow-x-auto">
@@ -127,34 +162,34 @@ const DataTable = () => {
                 />
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                BOL Number
-              </th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                File Name
+                SKU
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
                 Product Name
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                MOT
+                Category
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                Origin
+                Current Stock
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                Assigned To
+                Forecasted
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                Issue Status
+                Actual
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                Root Cause
+                Accuracy
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                Shipment Date
+                Risk Level
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                BOL Status
+                Next Reorder
+              </th>
+              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
+                Status
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
                 Actions
@@ -176,34 +211,37 @@ const DataTable = () => {
                   />
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-blue-600 dark:text-blue-400">
-                  {row.bolNumber}
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                  {row.fileName}
+                  {row.sku}
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
                   {row.productName}
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                  {row.mot}
+                  {row.category}
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                  {row.origin}
+                  {row.currentStock.toLocaleString()}
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                  {row.assignedTo}
+                  {row.forecastedDemand.toLocaleString()}
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                  {row.issueStatus}
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                  {row.rootCause}
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                  {row.shipmentDate}
+                  {row.actualDemand.toLocaleString()}
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap">
-                  {getStatusBadge(row.bolStatus)}
+                  <div className="flex items-center space-x-2">
+                    {getAccuracyIcon(row.accuracy)}
+                    <span className="text-sm text-gray-900 dark:text-gray-100">{row.accuracy}%</span>
+                  </div>
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap">
+                  {getRiskBadge(row.riskLevel)}
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                  {row.nextReorder}
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap">
+                  {getStatusBadge(row.status)}
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
                   <button className="p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded">
