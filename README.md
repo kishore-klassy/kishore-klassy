@@ -7,7 +7,7 @@
 
 <h3 align="center">
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=40EDF7&lines=Gen+AI+Full+Stack+Engineer;AI+Full+Stack+Enthusiast+🧠;Skilled+Problem+Solver+🚀;Passionate+about+AI+and+Agents)](https://git.io/typing-svg)
+
 </h3>
 
 <div align="center">
